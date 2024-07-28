@@ -3,9 +3,7 @@ import { PORT } from './config.js'
 
 const app = express()
 
-app.use((req, res) => {
-  console.log('recivido')
-})
+app.use(express.json())
 
 app.listen(PORT, () => {
   console.log('Server listening on port ' + PORT)
